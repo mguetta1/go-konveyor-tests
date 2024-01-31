@@ -1,16 +1,13 @@
 package analysis
 
-import "github.com/konveyor/tackle2-hub/api"
+import (
+	"github.com/konveyor/go-konveyor-tests/data"
+	"github.com/konveyor/tackle2-hub/api"
+)
 
 var Daytrader = TC{
 	Name: "Daytrader",
-	Application: api.Application{
-		Name: "Daytrader 7 EE application",
-		Repository: &api.Repository{
-			Kind: "git",
-			URL:  "https://github.com/WASdev/sample.daytrader7.git",
-		},
-	},
+	Application: data.Daytrader,
 	WithDeps: true,
 	Task:     Analyze,
 	ReportContent: map[string][]string{

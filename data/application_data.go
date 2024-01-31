@@ -32,7 +32,15 @@ var (
 			Kind: "subversion",
 			URL:  "https://github.com/konveyor/tackle-testapp",
 		},
-		Binary: "io.konveyor.demo:customers-tomcat:0.0.1-SNAPSHOT:war",
+		Binary: "io.konveyor.demo:customers-tomcat:0.0.1-SNAPSHOT:war", // groupId:artifactId:version:packaging from pom.xml
 	}
-	ApplicationSamples = []api.Application{Minimal, PathfinderGit, BookServer, TackleTestapp}
+	Daytrader = api.Application{
+		Name: "Daytrader 7 EE application",
+		Repository: &api.Repository{
+			Kind: "git",
+			URL:  "https://github.com/WASdev/sample.daytrader7.git",
+		},
+		Binary: "net.wasdev.wlp.sample:daytrader7:1.0-SNAPSHOT:pom",
+	}
+	ApplicationSamples = []api.Application{Minimal, PathfinderGit, BookServer, TackleTestapp, Daytrader}
 )
