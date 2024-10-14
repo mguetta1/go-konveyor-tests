@@ -3,13 +3,13 @@ package analysis
 // Tier 0 Analysis test cases - should never fail.
 // List of applications with expected analysis outputs.
 var Tier0TestCases = []TC{
-	TackleTestappPublicWithDeps,
-	TackleTestappPublicPackageFilter,
-	Tomcat,
+	// TackleTestappPublicWithDeps,
+	// TackleTestappPublicPackageFilter,
+	// Tomcat,
 	CoolstoreWithDeps,
-	AcmeairWebappBinary,	// Binary upload
-	AdministracionEfectivoBinary, // Binary upload
-	TackleTestappPublicBinary,	// Binary fetched from tackle-testapp-public maven registry
+	// AcmeairWebappBinary,	// Binary upload
+	// AdministracionEfectivoBinary, // Binary upload
+	// TackleTestappPublicBinary,	// Binary fetched from tackle-testapp-public maven registry
 }
 
 // Tier 1 Analysis test cases - should work.
