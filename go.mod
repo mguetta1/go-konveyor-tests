@@ -7,7 +7,7 @@ require (
 	github.com/jortel/go-utils v0.1.2
 	github.com/k0kubun/pp v2.4.0+incompatible
 	github.com/konveyor/tackle2-addon v0.2.0
-	github.com/konveyor/tackle2-hub v0.5.0-alpha.1.0.20240624155659-8b271b9c2ec9
+	github.com/konveyor/tackle2-hub v0.6.0-alpha.2.0.20241114223016-a4c11db9e2a8
 	github.com/onsi/ginkgo/v2 v2.11.0
 	github.com/onsi/gomega v1.27.10
 )

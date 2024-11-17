@@ -145,6 +145,8 @@ github.com/konveyor/tackle2-hub v0.4.1-0.20240608055009-6e91e6412624 h1:I+IXcwtp
 github.com/konveyor/tackle2-hub v0.4.1-0.20240608055009-6e91e6412624/go.mod h1:5c5A3i/oARdUp1yo+iYJFFvsIlsbsVGBZT7/CQji9YY=
 github.com/konveyor/tackle2-hub v0.5.0-alpha.1.0.20240624155659-8b271b9c2ec9 h1:nDn7jPpdl3QKBwo2tsPT7T4xPqyvx3przneAOqsuB5c=
 github.com/konveyor/tackle2-hub v0.5.0-alpha.1.0.20240624155659-8b271b9c2ec9/go.mod h1:5c5A3i/oARdUp1yo+iYJFFvsIlsbsVGBZT7/CQji9YY=
+github.com/konveyor/tackle2-hub v0.6.0-alpha.2.0.20241114223016-a4c11db9e2a8 h1:3H0zIfjCapDqLse/e/y5fyyv9ZybA+1zKADCHOXRil8=
+github.com/konveyor/tackle2-hub v0.6.0-alpha.2.0.20241114223016-a4c11db9e2a8/go.mod h1:PeqkGgjIbCjaK/zudHGcBG4jB3Wbyi+lAIDLUjgjbMI=
 github.com/kr/pretty v0.2.0/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
