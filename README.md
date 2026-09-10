@@ -23,7 +23,7 @@ Background for this test suite come from Hub API tests [https://github.com/konve
 
 There is a `binding` package providing API client methods https://github.com/konveyor/tackle2-hub/tree/main/binding.
 
-Feel free to follow [application analysis integration test directory](https://github.com/konveyor/go-konveyor-tests/tree/main/analysis) as an example.
+Feel free to follow the [metrics integration tests directory](https://github.com/konveyor/go-konveyor-tests/tree/main/e2e/metrics) as an example.
 
 ## Konveyor CI status
 
@@ -67,16 +67,16 @@ Run test manually example:
 
 ```
 $ export HUB_BASE_URL="http://`minikube ip`/hub"
-$ go test -count=1 -v ./analysis/
+$ go test -count=1 -v ./e2e/metrics/
 ```
 
 ## Test tiers
 
-To provide maximum information about the project functionality, tests were separated into three tiers. From core functionality to nice to haves.
+To provide maximum information about the project functionality, tests were separated into four tiers. From core functionality to nice to haves.
 
 ### Tier 0
 
-Very basic and core functionality. A bug here would lead to mostly useless project. This tier should never fail. Examples: basic application analysis flow.
+Very basic and core functionality. A bug here would lead to mostly useless project. This tier should never fail. Currently no tests are assigned to this tier.
 
 ```
 $ make test-tier0
@@ -84,7 +84,7 @@ $ make test-tier0
 
 ### Tier 1
 
-Features of the project expected to work to satifly most of end-users expectations. Examples: real-world use cases of application analysis, Jira integrations or metrics.
+Features of the project expected to work to satifly most of end-users expectations. Currently runs the metrics tests.
 
 ```
 $ make test-tier1
@@ -92,7 +92,7 @@ $ make test-tier1
 
 ### Tier 2
 
-More advanced features like complex application analysis or some edge cases. This tier should be kept green, but a failure should not affect most of users.
+More advanced features and nice-to-haves. This tier should be kept green, but a failure should not affect most of users. Currently no tests are assigned to this tier.
 
 ```
 $ make test-tier2
@@ -100,7 +100,7 @@ $ make test-tier2
 
 ### Tier 3
 
-Tests involving credentials or private resources which are supplied as part of the test configuration. It should be excluded from PR runs and will be run through Jenkins.
+Tests involving credentials or private resources which are supplied as part of the test configuration. It should be excluded from PR runs and will be run through Jenkins. Currently runs the Jira integration and migration wave tests.
 
 ```
 $ make test-tier3
@@ -120,7 +120,7 @@ $ make test-hub-api
 
 ### DEBUG
 
-For debug output like printing full analysis results, set `export DEBUG=1`.
+For debug output like printing full test results, set `export DEBUG=1`.
 
 ### KEEP
 
