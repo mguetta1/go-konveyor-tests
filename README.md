@@ -9,7 +9,6 @@
 [![Test nightly TIER0](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier0.yml/badge.svg)](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier0.yml)
 [![Test nightly TIER1](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier1.yml/badge.svg)](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier1.yml)
 [![Test nightly TIER2](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier2.yml/badge.svg)](https://github.com/konveyor/go-konveyor-tests/actions/workflows/nightly-tier2.yml)
-[![Test nightly TIER3](https://img.shields.io/endpoint?url=https%3A%2F%2Fsajidmansoori12.pythonanywhere.com%2Fretrieve_data%3Fpipeline%3Dtier3-nightly&cacheSeconds=60)](https://jenkins-csb-migrationqe-main.dno.corp.redhat.com/view/MTA/job/mta/job/konveyor-tier3-nightly/)
 
 This repository contains application-level API test suite for Konveyor. That means test focusing on integration of multiple components and real-world Koveyor use-cases. Basic components tests should be placed and executed in their own repositories.
 
@@ -118,25 +117,9 @@ $ make test-hub-api
 
 ## Test execution options
 
-### DEBUG
-
-For debug output like printing full test results, set `export DEBUG=1`.
-
 ### KEEP
 
 For keep data created by test e.g. for debugging purposes, set `export KEEP=1`.
-
-### PARALLEL
-
-For parallel test execution, set `export PARALLEL=1`.
-
-### CI_REPO_URL
-
-For using a custom CI repository URL, set `export CI_REPO_URL=<repository-url>`. Defaults to `https://github.com/konveyor/ci`.
-
-### CI_REPO_BRANCH
-
-For using a custom branch of the CI repository clone, set `export CI_REPO_BRANCH=<branch-name>`. Defaults to `main`.
 
 ## Configuration
 
